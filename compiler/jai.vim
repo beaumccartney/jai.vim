@@ -39,7 +39,7 @@ function! FindJaiCompiler()
 endfunction
 
 function! GetJaiMakeprg()
-    return FindJaiCompiler() . " -no_color -quiet -x64 " . FindJaiEntrypoint(expand('%'))
+    return FindJaiCompiler() . " -no_color -quiet " . FindJaiEntrypoint(expand('%'))
 endfunction
 
 function! UpdateJaiMakeprg()
